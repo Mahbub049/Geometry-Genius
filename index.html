@@ -18,75 +18,146 @@
 <body class="font-inter">
     <header></header>
     <main class="flex justify-evenly">
-        <div class="shapes-container grid grid-cols-3">
+        <div class="shapes-container grid grid-cols-3 gap-6">
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="flex items-center justify-center mt-3 mb-8">
+                    <div>
+                        <input id="triangle-b" type="text" placeholder="b" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <input id="triangle-h" type="text" placeholder="h" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button id="triangle-calculate"  class="btn  bg-[#1090D8] border-0 text-white text-lg font-bold w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area (A) = w x l</p>
+                  <div class="flex items-center justify-center mt-3 mb-8">
+                    <div>
+                        <input type="text" placeholder="w" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="h" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn  bg-[#1090D8] border-0 text-white text-lg font-bold w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = b x h</p>
+                  <div class="flex items-center justify-center mt-3 mb-8">
+                    <div>
+                        <input type="text" placeholder="b" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="h" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn  bg-[#1090D8] border-0 text-white text-lg font-bold w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                  <div class="flex items-center justify-center mt-3 mb-8">
+                    <div>
+                        <input type="text" placeholder="d1" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="d2" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn  bg-[#1090D8] border-0 text-white text-lg font-bold w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area (A) = 0.5 x p x b</p>
+                  <div class="flex items-center justify-center mt-3 mb-8">
+                    <div>
+                        <input type="text" placeholder="p" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="b" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn  bg-[#1090D8] border-0 text-white text-lg font-bold w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area (A) = pi x a x b</p>
+                  <div class="flex items-center justify-center mt-3 mb-8">
+                    <div>
+                        <input type="text" placeholder="a" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="b" class="py-2 px-3 w-2/4">
+                        <span>cm</span>
+                    </div>
+                  </div>
+                  <div class="card-actions w-full">
+                    <button class="btn  bg-[#1090D8] border-0 text-white text-lg font-bold w-full">Calculate</button>
                   </div>
                 </div>
               </div>
 
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
         </div>
         <div class="px-36 py-7 border-4 mt-10">
             <h5 class="underline text-xl font-bold">Area Calculation</h5>
         </div>
     </main>
+
+    <script src="./JS/triangle.js"></script>
 </body>
 </html>
